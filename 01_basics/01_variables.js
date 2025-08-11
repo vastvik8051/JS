@@ -10,9 +10,8 @@ accountEmail = "hc@hc.com"
 accountPassword = "123"
 accountCity = "bhopal"
 
-/*
-do not use var because it has issues with jawa only use let
-*/
+// do not use var because it has issues with jawa only use let
+
 console.log(accountId);
 
 console.table({accountId, accountEmail, accountCity, accountState, accountPassword})
