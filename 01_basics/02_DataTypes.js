@@ -16,5 +16,4 @@ null => used for standalone values
 undefined => when there is no value assigned
 symbol => it is used to create unique values
 object => it is used to store collection of data and more complex entities
-
-    */
+*/
