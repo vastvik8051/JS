@@ -127,7 +127,7 @@ console.log(2%2)
 
 // Adding strings
 let str1 = "hellow"
-let str2 = " how are you" // add space between quotes and the word ofr it will get mixed togeather while adding
+let str2 = " how are you" // add space between quotes and the word or it will get mixed togeather while adding
 let srt3 = str1 + str2
 console.log(typeof srt3)
 console.log(srt3)
