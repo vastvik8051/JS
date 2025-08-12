@@ -54,7 +54,7 @@ let ValueInNumberFore = Number(scoreFore)
 console.log(typeof ValueInNumberFore)
 console.log(ValueInNumberFore)
 // output is 1
-// for value false, the output will be 0
+// for value false, the output will be 0 this is boolean to number conversion
 
 // is there is a conversion for a unconvertable value, the value will be NaN, for example "Vastvik" can not be converted into a number
 // example code
@@ -65,3 +65,48 @@ let ValueInNumberFive = Number(scoreFive)
 console.log(typeof ValueInNumberFive)
 console.log(ValueInNumberFive)
 // output will be NaN   
+
+
+// number to boolean conversion
+// 0 is false, all other numbers are true
+let isLoggedIn = 1
+let booleanIsLoggedIn = Boolean(isLoggedIn)
+console.log(typeof isLoggedIn)
+console.log(typeof (isLoggedIn))
+let ValueisLoggedIn = Boolean(true)
+console.log(typeof ValueisLoggedIn)
+console.log(ValueisLoggedIn)
+// output will be boolean "true" because 1 is a truthy value
+
+// what if the value is 0?      
+let IsLoggedOut = 0
+let booleanIsLoggedOut = Boolean(IsLoggedOut)
+console.log(typeof IsLoggedOut)
+console.log(typeof (IsLoggedOut))
+let ValueIsLoggedOut = Boolean(false)
+console.log(typeof ValueIsLoggedOut)
+console.log(ValueIsLoggedOut)
+// output will be boolean "false" because 0 is a falsy value
+
+// converting empty string to boolean
+let IsLoggedOut1 = ""
+let booleanIsLoggedOut1 = Boolean(IsLoggedOut1)
+console.log(typeof IsLoggedOut1)
+console.log(typeof (IsLoggedOut1))
+let ValueIsLoggedOut1 = Boolean(false)
+console.log(typeof ValueIsLoggedOut1)
+console.log(ValueIsLoggedOut1)
+// output will be boolean "false" because empty string is a falsy value
+
+// converting name to boolean
+let IsLoggedIn2 = "Vastvik"
+let booleanIsLoggedIn2 = Boolean(IsLoggedIn2)
+console.log(booleanIsLoggedIn2);
+// output will be boolean "true" because non-empty string is a truthy value
+
+// converting number into string
+let thisNumber = 10
+let stringNumber = String(thisNumber)
+console.log(typeof stringNumber)
+console.log(thisNumber)
+// output will be string "10" because the number is converted to a string
