@@ -46,3 +46,50 @@ console.log(ValueInNumberone)
 console.log(typeof abcd)
 
 // Symbol = unique value
+const id  = Symbol("123")
+const anotherId = Symbol("123")
+console.log(id === anotherId)
+console.log(id)
+console.log(typeof id)
+console.log(anotherId)
+console.log(typeof anotherId)
+// symbols are not equal even if they have the same description
+
+// BigInt = large numbers
+const bigNumber = 265645612121321655665303211654n // the 'n' at the end indicates a BigInt or use BigInt(yourNuber)
+console.log(bigNumber)
+console.log(typeof bigNumber)
+
+//***************Reference (NonPrimitive)*************** */
+
+//array = list of values, they are written in square brackets []
+const animals = ["dog", "cat", "mouse"]
+console.log(animals)
+console.log(animals[0]) // access first element
+console.log(animals[1]) // access second element
+console.log(animals[2]) // access third element
+console.log(typeof animals) // arrays are objects in JavaScript
+
+// object = key-value pairs, they are written in curly braces {}
+
+const person = {
+    name: "vastvik",
+    age: 25,
+    isLoggedIn: true,
+    location: "Gwalior Madhya Pradesh",
+}
+    console.log(person)
+    // everyThing written in the object is a key-value pair
+
+    // Function with variable
+    const myFunction = function(x,y){ //function expression (standard declaration), fntion ke andar x and y are parameters, which can hold multiple values when the function is called
+        let ab =x //x is assigned to ab
+        let cd = y //y is assigned to cd
+        return ab + " " + cd // this will return the values of ab and cd when the function is called.
+    }
+     // calling the function
+    console.log(myFunction(1,2)) // this will return undefined because ab and cd are not defined in the function
+    console.log(myFunction("vastvik", "sharma")) // this will return vastvik sharma
+    console.log("will be learning about functions in detail later")
+
+    console.table({score, score1, IsLoggedIn, BooleanIsLoggedIn, IsLoggedOut, BooleanIsLoggedOut, hehe, ValueInNumber, abcd, ValueInNumberone, id, anotherId, bigNumber, animals, person,}) // this will print the values in a table format
