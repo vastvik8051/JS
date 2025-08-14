@@ -93,3 +93,32 @@ const person = {
     console.log("will be learning about functions in detail later")
 
     console.table({score, score1, IsLoggedIn, BooleanIsLoggedIn, IsLoggedOut, BooleanIsLoggedOut, hehe, ValueInNumber, abcd, ValueInNumberone, id, anotherId, bigNumber, animals, person,}) // this will print the values in a table format
+
+    /************************************************************/
+
+    // stack (primitive), Heap(non-primitive)
+
+    //stack memory = in stack memory the values are stored directly in the variable, when the value is changed, the original value is changed.
+   let learning = "stack Memory"
+   let learningAbout = "learning"
+   learningAbout = "learning about stack memory and heap memory in JavaScript"
+   console.log(learning)
+   console.log(learningAbout)
+
+   // Heap memory = when values are updated in heap memory, the original value is not changed, instead a new value is created in memory and the variable points to that new value.
+   let user1 = {
+    name: "vastvik",
+    email: "vastvik@mail.com",
+    age: 24,
+    paymentMethod: "UPI",
+   }
+   console.log(user1)
+
+   //changing values
+  let  user2 = user1
+  console.log(user2)
+
+  // changing value of just user1 mail
+  user1.email = "sharma@mail.com" // in objects you just just access the info by (user1.mail or user1.age etc etc..)
+  console.log(user1)
+  // when you change the value of user1, it will also change the value of user2 because both are pointing to the same object in memory
